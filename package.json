@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "create grunt plugin for the first time",
   "repository": "https://github.com/Yangqin0607/grunt-plugin-test",
+  "homepage":"https://yangqin0607.github.io/grunt-plugin-test/",
   "author": {
     "name": "Ailsa",
     "email": "caoyangqin0607@163.com",
