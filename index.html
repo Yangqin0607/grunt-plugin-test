@@ -74,20 +74,20 @@
 <a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h3>
 
 <h4>
-<a id="optionsseparator" class="anchor" href="#optionsseparator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>options.separator</h4>
+<a id="optionswho" class="anchor" href="#optionswho" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>options.who</h4>
 
 <p>Type: <code>String</code>
-Default value: <code>',  '</code></p>
+Default value: <code>'dog'</code></p>
 
-<p>A string value that is used to do something with whatever.</p>
+<p>A string value that is used to name the file;</p>
 
 <h4>
-<a id="optionspunctuation" class="anchor" href="#optionspunctuation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>options.punctuation</h4>
+<a id="optionscommentsymbol" class="anchor" href="#optionscommentsymbol" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>options.commentSymbol</h4>
 
 <p>Type: <code>String</code>
-Default value: <code>'.'</code></p>
+Default value: <code>'//'</code></p>
 
-<p>A string value that is used to do something else with whatever else.</p>
+<p>A string value that is used to define the symbol for comment.</p>
 
 <h3>
 <a id="usage-examples" class="anchor" href="#usage-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage Examples</h3>
@@ -95,31 +95,13 @@ Default value: <code>'.'</code></p>
 <h4>
 <a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default Options</h4>
 
-<p>In this example, the default options are used to do something with whatever. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result would be <code>Testing, 1 2 3.</code></p>
-
-<div class="highlight highlight-source-js"><pre><span class="pl-smi">grunt</span>.<span class="pl-en">initConfig</span>({
-  pluginTest_cyq<span class="pl-k">:</span> {
-    options<span class="pl-k">:</span> {},
-    files<span class="pl-k">:</span> {
-      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
-    },
-  },
-})</pre></div>
-
-<h4>
-<a id="custom-options" class="anchor" href="#custom-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom Options</h4>
-
-<p>In this example, custom options are used to do something else with whatever else. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result in this case would be <code>Testing: 1 2 3 !!!</code></p>
-
 <div class="highlight highlight-source-js"><pre><span class="pl-smi">grunt</span>.<span class="pl-en">initConfig</span>({
   pluginTest_cyq<span class="pl-k">:</span> {
     options<span class="pl-k">:</span> {
-      separator<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>: <span class="pl-pds">'</span></span>,
-      punctuation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span> !!!<span class="pl-pds">'</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>who<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span>,
+      <span class="pl-s"><span class="pl-pds">"</span>commentSymbol<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>//<span class="pl-pds">"</span></span>
     },
-    files<span class="pl-k">:</span> {
-      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
-    },
+    dist<span class="pl-k">:</span>[<span class="pl-s"><span class="pl-pds">"</span>example/*.js<span class="pl-pds">"</span></span>]
   },
 })</pre></div>
 
@@ -131,7 +113,7 @@ Default value: <code>'.'</code></p>
 <h2>
 <a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release History</h2>
 
-<p><em>(Nothing yet)</em></p>
+<p>2016-11-17  v0.0.1   init</p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
